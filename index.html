@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            BSEM
+        </title>
+        <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .second{
+                display:none;
+                font-size:300%;
+            }
+            @font-face{
+                font-family:hindi;
+                src: url(Ananda.ttf);
+            }
+           
+            body{
+                
+           margin:auto;
+                max-width: 1200px;
+                max-height: 1000px;  
+            }
+            .hide{
+                display:none;
+            }
+            .show{
+                display:block;
+            }
+        .first{ 
+            text-align:center;
+            vertical-align: center;   
+        }
+        .first,.second{
+            text-align:center;
+            width:100%;
+            height:100%;
+
+        }
+    
+
+
+        #dra
+        {  vertical-align: middle;
+            max-height:500px;
+            max-width:500px;
+            min-height:200px;
+            min-width:200px;
+            height: 75%;
+            margin-top:12.5%;
+        }
+        #jb{
+            font-size:larger;
+            color:black;
+            font-weight:bolder;
+             margin-left:15%;
+             font-family:hindi;
+             font-size:240%;
+             margin-top:12.5%;
+        }
+        .after{
+            display:none;
+        }
+        </style>
+    </head>
+    <body>
+               
+        
+        <div class="first" id="first">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12">
+                <img src="bhmraoambedkarji2.png" id="dra">    
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="second" id="second">
+                <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 col-xs-12">
+                                    <h2 id="jb">JAI BHIM</h2>    
+                </div>
+                </div>
+                </div>
+                </div>
+                 
+        </div>
+
+        <div class="after" id="after">
+            <h3 id="demo">HELLO WORLD</h3>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <script>
+            var f = document.getElementById('first');
+            f.style.display.width = screen.width + "px";
+
+$().ready(function(){
+
+$('div.first').delay(1500);
+ $('div.first').fadeOut(1000);
+ $('div.second').delay(3500);
+ $('div.second').fadeIn(2000);
+ $('div.second').delay(1500);
+ $('div.second').fadeOut(1000);
+ $('div.after').delay(8000);
+ $('div.after').fadeIn(6000);
+});
+
+if(screen.width<=700){
+    var c = document.getElementById('dra');
+    c.style.height = "55%";
+    c.style.marginTop="34.5%";
+    var j = document.getElementById('jb');
+    j.style.marginTop = "50%";
+}
+
+
+        </script>
+    </body>
+</html>
