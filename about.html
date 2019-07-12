@@ -51,9 +51,7 @@ body{
     <div class="modal first" id="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" id="close">&times;</span>
-                  </button>
+                 
                 <div class="modal-body">
                   <img src = "am.jpeg" style="width:100%;">
                   <span class="jai">Jai Bhim</span>
@@ -87,12 +85,10 @@ body{
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
         <script>
-        var close = document.getElementById('close');
-        var modal = document.getElementById('modal');
-
-        close.onclick = function(){
-            modal.style.display="none";
-        }
+          $(document).ready(function(){
+          $('div.first').delay(2000);
+          $('div.first').fadeOut(1000);
+       });
         </script>
     </body>
 </html>
