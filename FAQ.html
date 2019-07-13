@@ -11,6 +11,13 @@
         <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" type="text/css"/>
          <link href="bhmraoambedkarji2.png" rel="shortcut icon"/>      
                <style>
+                 .logo-name{
+    background-color:black;
+    font-size:150%;
+    text-align:center;
+    color:white;
+
+}
                    @font-face{
                        font-family:hindi;
                        src: url(Ananda.ttf);
@@ -18,6 +25,10 @@
                    @font-face{
                        font-family:head;
                        src:url(meloche-bk.ttf);
+                   }
+                   @font-face{
+                       font-family:hinditwo;
+                       src:url(Hindi.ttf);
                    }
                    .jai{
                        font-family:hindi;
@@ -65,14 +76,28 @@ body{
 .nav{
   font-size:110%;
 }
+.quest{
+  margin-bottom:2%;
+
+}
+.last{
+  margin-bottom:1%;
+}
+.dropdowns{
+  margin-left:auto;
+  margin-right:auto;
+}
+
 
                    </style>
     </head>
     <body>
    
-          <div class="jumbotron logo-name">
-             &#x269C; BSEM &#x269C;
-          </div>
+      <div class="jumbotron logo-name" style="font-size:250%;">
+        <span class="name_hindi" style="font-family: hinditwo;">afaf ;fx]a PStf d+r</span><br>
+        <span class="nothindi">BSEM</span> 
+                    </div>
+
           <ul class="nav nav-pills justify-content-center" style="margin-top:0;">
               <li class="nav-item option">
                 <a class="nav-link" href="index">Home &#127968;</a>
@@ -90,9 +115,11 @@ body{
                 <a class="nav-link" href="active">ACTIVITIES 🎗️</a>
               </li>
             </ul>
+            <br>
 
-<h2>Frequently Asked Questions :- </h2>
-<div class="dropdown">
+<h5 style="text-align:center;">🧐Frequently Asked Questions🧐</h5>
+<br>
+<div class="dropdown justify-content-center" style=" padding-left:15%;">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       This is a question that is asked
     </button>
@@ -100,8 +127,66 @@ body{
       <a class="dropdown-item" href="#">This is the answer of the above question </a>
     </div>
   </div>
+<br>
+<div class="dropdown justify-content-center" style=" padding-left:15%;">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    This is a question that is asked
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">This is the answer of the above question </a>
+  </div>
+</div>
 
-<div class="form">
+<br>
+<div class="dropdown justify-content-center" style=" padding-left:15%;">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    This is a question that is asked
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">This is the answer of the above question </a>
+  </div>
+</div>
+<br>
+<div class="dropdown justify-content-center" style=" padding-left:15%;">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    This is a question that is asked
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">This is the answer of the above question </a>
+  </div>
+</div>
+<br>
+<div class="dropdown justify-content-center" style=" padding-left:15%;">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    This is a question that is asked
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">This is the answer of the above question </a>
+  </div>
+</div>
+<br>
+<div class="dropdown justify-content-center" style=" padding-left:15%;">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    This is a question that is asked
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">This is the answer of the above question </a>
+  </div>
+</div>
+<br>
+
+<div class="alert alert-info" role="alert" style="text-align:center; font-size:80%;">
+  🤔 STILL CURIOUS ABOUT SOMETHING 🤔
+</div>
+<div class="alert alert-success" role="alert" style="text-align:center; font-size:80%;">
+  ASK IT HERE 👇
+</div>
+
+<button type="button" class="btn btn-primary btn-lg btn-block" id="form_btn">QUENCH YOUR CURIOSITY</button>
+<br>
+
+
+<div id="form" style="display:none">
               <div class="cognito">
                 <script src="https://services.cognitoforms.com/s/SONUhYURkkuIt9WFg1n0FA"></script>
                 <script>Cognito.load("forms", { id: "1" });</script>
@@ -119,8 +204,18 @@ body{
   </div>
   <span style="text-align:center; font-size:90%;margin-left:auto; margin-right:auto;">&copy; 2019, All Rights Reserved</span>
 </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+  var form = document.getElementById('form');
+  var btn = document.getElementById('form_btn');
 
-        
+  btn.onclick = function(){
+    form.style.display="block";
+  }
+  </script>        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     </body>
 </html>
