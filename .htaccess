@@ -1,15 +1,6 @@
-# mod_rewrite starts here
+<IfModule mod_rewrite.c>
 
-RewriteEngine on
-
-# does not apply to existing directories
-
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Check for file in directory with .html extension
-
-RewriteCond%{REQUeST_FILENAME}/.html -f
-
-# here we actually show the page that has the .html extension
-
-RewriteRule ^(.*)$ $1.html [NC,L]
+ RewriteEngine On
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteRule ^([^\.]+)$ $1.html [NC,L]
+ </IfModule>
