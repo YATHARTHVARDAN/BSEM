@@ -51,35 +51,56 @@ body{
   margin-bottom:5%;
   height:150%;
 }
+.credit{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  width:20%;
+}
+.credit{
+  width:20%;
+  margin-left:20%;
+}
+.nav{
+  font-size:110%;
+}
 
                    </style>
     </head>
     <body>
-    <div class="modal first" id="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                  
-                <div class="modal-body">
-                  <img src = "am.jpeg" style="width:100%;">
-                  <span class="jai">Jai Bhim</span>
-                </div>
-              </div>
-            </div>
-          </div>
+   
           <div class="jumbotron logo-name">
              &#x269C; BSEM &#x269C;
           </div>
           <ul class="nav nav-pills justify-content-center" style="margin-top:0;">
-                <li class="nav-item option">
-                  <a class="nav-link" href="index.html">Home &#127968;</a>
-                </li>
-                <li class="nav-item option">
-                  <a class="nav-link" href="about.html">About Us &#x270E;</a>
-                </li>
-                <li class="nav-item option">
-                  <a class="nav-link active" href="FAQ.html">FAQ &#x270D;</a>
-                </li>
-              </ul>   
+              <li class="nav-item option">
+                <a class="nav-link" href="index.html">Home &#127968;</a>
+              </li>
+              <li class="nav-item option">
+                <a class="nav-link" href="about.html">About Us &#x270E;</a>
+              </li>
+              <li class="nav-item option">
+                <a class="nav-link active" href="FAQ.html">FAQ &#x270D;</a>
+              </li><br>
+              <li class="nav-item option">
+                <a class="nav-link " href="aao.html">AIM & OBJECTIVES 🎯</a>
+              </li>
+              <li class="nav-item option">
+                <a class="nav-link" href="active.html">ACTIVITIES 🎗️</a>
+              </li>
+            </ul>
+
+<h2>Frequently Asked Questions :- </h2>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      This is a question that is asked
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">This is the answer of the above question </a>
+    </div>
+  </div>
+
 <div class="form">
               <div class="cognito">
                 <script src="https://services.cognitoforms.com/s/SONUhYURkkuIt9WFg1n0FA"></script>
@@ -87,22 +108,19 @@ body{
                 </div>
 </div>
                 
-           <footer class="jumbotron" style="background-color:black; color:white; text-align: center;">
-               <div class="body">
-                   <img src="fb.png" class="fb" style="width:8%;"/> <img src="gmail.png" class="gmail" style="width:8%;"/>
-               </div>
-               <div class="footer">
-                   &copy; YATHARTH & HARSH 
-               </div>
-           </footer>   
-        
+<footer class="jumbotron" style="background-color:black; color:white; ">
+  <div class="body" style="text-align:center;">
+      <img src="fb.png" class="fb" style="width:8%;"/><img src="twitter.png" class="tweet" style="width:8%; margin-left:9%; margin-right:9%;"/> <img src="gmail.png" class="gmail" style="width:8%;"/>
+  </div><br>
+
+  <div class="footer">
+    <h5 class="cred" style=" width:100%;text-align:center; font-size:130%; margin-bottom:2%;"> CREDITS </h5>
+  <img src="y.png" alt="Yatharth" class="credit"/><img src="h.png" alt="harsh" class="credit">
+  </div>
+  <span style="text-align:center; font-size:90%;margin-left:auto; margin-right:auto;">&copy; 2019, All Rights Reserved</span>
+</footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-        <script>
-        $(document).ready(function(){
-          $('div.first').delay(2000);
-          $('div.first').fadeOut(1000);
-       });
-        </script>
+        
     </body>
 </html>
