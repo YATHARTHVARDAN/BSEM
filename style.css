@@ -1,0 +1,148 @@
+.logo-name{
+    background-color:black;
+    font-size:150%;
+    text-align:center;
+    color:white;
+
+}
+                   @font-face{
+                       font-family:hindi;
+                       src: url(Ananda.ttf);
+                   }
+                   @font-face{
+                       font-family:head;
+                       src:url(meloche-bk.ttf);
+                   }
+                   @font-face{
+                       font-family:hinditwo;
+                       src:url(Hindi.ttf);
+                   }
+                   @font-face{
+                    font-family:dr;
+                    src:url(b.ttf);
+                  }
+                  @font-face{
+                      font-family:quote;
+                      src:url(oreos.ttf);
+                  }
+                  @font-face{
+                      font-family:humble;
+                      src:url(Humblle.ttf);
+                  }
+                  @font-face{
+                      font-family:stick;
+                      src:url(stick.ttf);
+                  }
+                   .jai{
+                       font-family:hindi;
+                       font-size:250%;
+                       text-align:center;
+                   }
+.first{
+    display:block;
+    background-color:white;
+    background-color:rgb(255,255,255,0.8);
+    text-align:center;
+}
+
+
+.logo-name{
+   
+    font-size:250%;
+    text-align:center;
+
+}
+.logo{
+    size:5%;
+}
+
+body{
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+}
+.form{
+  width:100%;
+  margin-top:5%;
+  margin-bottom:5%;
+  height:150%;
+}
+.credit{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  width:20%;
+}
+.credit{
+  width:20%;
+  margin-left:20%;
+}
+.nav{
+  font-size:110%;
+}
+.quest{
+  margin-bottom:2%;
+
+}
+.last{
+  margin-bottom:1%;
+}
+.dropdowns{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@font-face{
+    font-family:hindi;
+    src: url(Ananda.ttf);
+}
+@font-face{
+    font-family:head;
+    src:url(meloche-bk.ttf);
+}
+@font-face{
+    font-family:hinditwo;
+    src:url(Hindi.ttf);
+}
+.jai{
+    font-family:hindi;
+    font-size:250%;
+    text-align:center;
+}
+.first{
+display:none;
+background-color:white;
+background-color:rgb(255,255,255,0.8);
+text-align:center;
+}
+
+
+.golden{
+color:gold;
+}
+.logo{
+size:5%;
+}
+body{
+border-right: 2px black solid;
+border-left: 2px black solid;
+}
+.credit{
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+border-bottom-left-radius:50%;
+border-bottom-right-radius:50%;
+width:20%;
+}
+.credit{
+width:20%;
+margin-left:20%;
+}
+.nav{
+font-size:110%;
+}
+@font-face{
+font-family:dr;
+src:url(b.ttf);
+}
+

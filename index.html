@@ -10,83 +10,29 @@
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <link href="bhmraoambedkarji2.png" rel="shortcut icon"/>    
+         <link href="pics/bhmraoambedkarji2.png" rel="shortcut icon"/>    
+         <link href="style.css" rel="stylesheet" type="text/css"/>
      
-               <style>
-                   @font-face{
-                       font-family:hindi;
-                       src: url(Ananda.ttf);
-                   }
-                   @font-face{
-                       font-family:head;
-                       src:url(meloche-bk.ttf);
-                   }
-                   @font-face{
-                       font-family:hinditwo;
-                       src:url(Hindi.ttf);
-                   }
-                   .jai{
-                       font-family:hindi;
-                       font-size:250%;
-                       text-align:center;
-                   }
-.first{
-    display:block;
-    background-color:white;
-    background-color:rgb(255,255,255,0.8);
-    text-align:center;
-}
-
-
-.logo-name{
-    background-color:black;
-    font-size:150%;
-    text-align:center;
-    color:white;
-
-}
-
-.golden{
-    color:gold;
-}
-.logo{
-    size:5%;
-}
-body{
-    border-right: 2px black solid;
-    border-left: 2px black solid;
-}
-.credit{
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius:50%;
-  border-bottom-right-radius:50%;
-  width:20%;
-}
-.credit{
-  width:20%;
-  margin-left:20%;
-}
-.nav{
-  font-size:110%;
-}
-
-                   </style>
     </head>
     <body>
     <div class="modal first" id="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-body">
-                  <img src = "am.jpeg" style="width:100%;">
+                  <img src = "pics/am.jpeg" style="width:100%;">
                   <span class="jai">Jai Bhim</span>
                 </div>
               </div>
             </div>
           </div>
+          <div class="second" id="second" style="background-color:black;text-align:center; color:white;">
+            <img src="pics/first.png" id="photo" class="page" style="width:60%;"/><br>
+            <span class="Dr" style="font-family:dr; width:100%;font-size:250%;">Dr. Bhim Rao Ambedkar</span><br>
+            <span class="quote" style="font-family:quote; font-size:300%; text-align:center;">" Life should be great<br> rather than long "</span>
+          </div>
           <div class="jumbotron logo-name" style="font-size:250%;">
-            <span class="name_hindi" style="font-family: hinditwo;">afaf ;fx]a PStf d+r</span><br>
-            <span class="nothindi">BSEM</span> 
+            <span class="name_hindi" style="font-family: hinditwo; font-weight:bolder; ">Baba Saheb Ekta Manch</span><br>
+            <span class="nothindi" style="font-family:"></span> 
                         </div>
 
           <ul class="nav nav-pills justify-content-center" style="margin-top:0;">
@@ -153,12 +99,12 @@ body{
 
               <footer class="jumbotron" style="background-color:black; color:white; ">
                     <div class="body" style="text-align:center;">
-                        <img src="fb.png" class="fb" style="width:8%;"/><img src="twitter.png" class="tweet" style="width:8%; margin-left:9%; margin-right:9%;"/> <img src="gmail.png" class="gmail" style="width:8%;"/>
+                        <img src="pics/fb.png" class="fb" style="width:8%;"/><img src="pics/twitter.png" class="tweet" style="width:8%; margin-left:9%; margin-right:9%;"/> <img src="pics/gmail.png" class="gmail" style="width:8%;"/>
                     </div><br>
 
                     <div class="footer">
                       <h5 class="cred" style=" width:100%;text-align:center; font-size:130%; margin-bottom:2%;"> CREDITS </h5>
-                    <img src="y.png" alt="Yatharth" class="credit"/><img src="h.png" alt="harsh" class="credit">
+                    <img src="pics/y.png" alt="Yatharth" class="credit"/><img src="pics/h.png" alt="harsh" class="credit">
                     </div>
                     <span style="text-align:center;font-size:90%;margin-left:auto; margin-right:auto;">&copy; 2019, All Rights Reserved</span>
                 </footer>   
@@ -166,7 +112,15 @@ body{
                 <script>$(document).ready(function(){
                     $('div.first').delay(2000);
                     $('div.first').fadeOut(1000);
-                 });</script>
+                 });
+                 
+
+                 var photo = document.getElementById('photo');
+                 photo.style.marginTop = (screen.height/7)+"px";
+                 var f = document.getElementById('second');
+                 f.style.width = screen.width+"px";
+                 f.style.height= screen.height+"px";
+                 </script>
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
