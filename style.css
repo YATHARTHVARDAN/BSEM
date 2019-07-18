@@ -47,8 +47,9 @@
 
 
 .logo-name{
-   
-    font-size:250%;
+   background-color: white;
+   color:black;
+    font-size:200%;
     text-align:center;
 
 }
@@ -146,3 +147,11 @@ font-family:dr;
 src:url(b.ttf);
 }
 
+img.sb{
+    width:15%;
+   
+}
+
+.left,.cen,.right{
+    font-size:50%;
+}
